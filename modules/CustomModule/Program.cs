@@ -162,7 +162,7 @@ namespace CustomModule
                 }
 
                 filteredMessage.Properties.Add("MessageType", "Alert");
-                filteredMessage.Properties.Add("CreateTime", $"{DateTime.Now:MM-dd HH:mm:ss}");
+                // filteredMessage.Properties.Add("CreateTime", $"{DateTime.Now:MM-dd HH:mm:ss}");
                 await deviceClient.SendEventAsync("output1", filteredMessage);
             }
 
